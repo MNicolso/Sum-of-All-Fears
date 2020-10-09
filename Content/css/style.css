@@ -369,6 +369,10 @@ body.light hr.separator {
   color: rgba(255, 255, 255, 0.07);
 }
 
+#projectMenu{
+    background-color:blue;
+   
+}
 /* [ HEADER ] */
 /*================================================== */
 
