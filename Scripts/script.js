@@ -24,7 +24,7 @@ function sumNumbersFunction(userArray, k) {
             sumNumbers.push(userArray[i])
         }
         if (sumNumbers.length != 2) {
-            document.getElementById('printBox').innerHTML = `<iframe width="420" height="315" src="https://www.youtube.com/embed/irIxkjXOp5M?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>`;
+            document.getElementById('printBox').innerHTML = `<iframe width="420" height="315" src="https://www.youtube.com/embed/irIxkjXOp5M?autoplay=1&controls=0&rel=0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>`;
 
         
 
