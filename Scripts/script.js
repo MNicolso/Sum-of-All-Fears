@@ -1,36 +1,61 @@
 ﻿document.getElementById("button").addEventListener('click', () => {
-    let minInput = parseInt(document.getElementById("minInput").value);
-    let maxInput = parseInt(document.getElementById("maxInput").value);
-    let fizzInput = parseInt(document.getElementById("fizzInput").value);
-    let buzzInput = parseInt(document.getElementById("buzzInput").value);
+    let userInput1 = parseInt(document.getElementById("userInput1").value);
+    let userInput2 = parseInt(document.getElementById("userInput2").value);
+    let userInput3 = parseInt(document.getElementById("userInput3").value);
+    let userInput4 = parseInt(document.getElementById("userInput4").value);
+    let userArray = [userInput1, userInput2, userInput3, userInput4];
+    let hardArray = [10, 15, 3, 7];
+    let k = parseInt(document.getElementById("k").value);
 
-    let arrayModified = modifiedData(minInput, maxInput, fizzInput, buzzInput);
 
-    document.getElementById('printBox').innerHTML = arrayModified;
+    let sumNumbers = sumNumbersFunction(userArray, k);
+    let sumNumberOne = sumNumbers[0];
+    let sumNumberTwo = sumNumbers[1];
+    document.getElementById('printBox').innerHTML = `${sumNumberOne} + ${sumNumberTwo} = ${k}`;
+  
 })
 
-//document.getElementsByTagName("input").addEventListener("keydown", function (e) {
-//    var character=(e.which)
-//}
+function sumNumbersFunction(userArray, k) {
+    var sumNumbers = [];
+    let sumNumberOne = sumNumbers[0];
+    let sumNumberTwo = sumNumbers[1];
+    var sumError = "not going to work";
+    for (let i = 0; i < userArray.length; i++) {
+        let map1 = userArray.map(x => x + userArray[i]);
+        console.log(map1);
+        let map1includes = map1.includes(k, 0);
+        console.log(map1includes);
+        if (map1includes == true) {
+            sumNumbers.push(userArray[i])
+            console.log(map1includes);
+        }
+        if (sumNumbers.length != 2) {
+         
 
-function modifiedData(minInput, maxInput, fizzInput, buzzInput) {
-    var arrayModified = "";
-    for (let i = minInput; i<= maxInput; i++) {
-        let fizzRemainder = i % fizzInput; 
-        let buzzRemainder = i % buzzInput; 
         
-        if (fizzRemainder == 0 && buzzRemainder == 0) {
-            arrayModified += "FIZZBUZZ! ";
-        } else if (fizzRemainder == 0) {
-            arrayModified += "fizz ";
-        } else if (buzzRemainder == 0) {
-            arrayModified += "buzz ";
+
         } else {
-            arrayModified += i+' ';
+            return sumNumbers;
         }
 
     }
-
-
-    return arrayModified;
+    
 }
+
+
+
+
+
+//const array1 = [10, 15, 3, 7];
+//const k = 25;
+//const sumNumbers = [];
+//for (let i = 0; i < array1.length; i++) {
+//    const map1 = array1.map(x => x + array1[i]);
+//    console.log(map1);
+//    const map1includes = map1.includes(k, 0);
+//    console.log(map1includes);
+//    if (map1includes == true) {
+//        sumNumbers.push(array1[i]);
+//    }
+//}
+//console.log(sumNumbers);
