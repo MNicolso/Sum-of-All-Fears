@@ -17,20 +17,14 @@
 
 function sumNumbersFunction(userArray, k) {
     var sumNumbers = [];
-    let sumNumberOne = sumNumbers[0];
-    let sumNumberTwo = sumNumbers[1];
-    var sumError = "not going to work";
     for (let i = 0; i < userArray.length; i++) {
         let map1 = userArray.map(x => x + userArray[i]);
-        console.log(map1);
         let map1includes = map1.includes(k, 0);
-        console.log(map1includes);
         if (map1includes == true) {
             sumNumbers.push(userArray[i])
-            console.log(map1includes);
         }
         if (sumNumbers.length != 2) {
-         
+            document.getElementById('printBox').innerHTML = `<iframe width="420" height="315" src="https://www.youtube.com/embed/irIxkjXOp5M?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>`;
 
         
 

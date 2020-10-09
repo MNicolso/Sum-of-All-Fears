@@ -31,7 +31,7 @@
     <header id="header" class="headerTwo fixed-top">
         <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
             <div class="container">
-                <a class="navbar-brand font-weight-bold" href=""><span>MINI PROJECTS</span></a>
+                <a class="navbar-brand font-weight-bold" ><span>MINI PROJECTS</span></a>
                 <!--  Navbar Toggler Button Start -->
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="lni-menu size-md"></span>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="https://tacocatminiproject.netlify.app/">TacocaT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#miniSites">Sum of All Fears</a>
+                            <a class="nav-link" href="https://fizzbuzzminiproject.netlify.app/index.html">FizzBuzz</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://sunsethillsminiproject.netlify.app/">Sunset Hills</a>
@@ -76,7 +76,7 @@
             </li>
             <li class="icon-box">
                 <i class="fa fa-git"></i>
-                <a href="https://github.com/MNicolso/FizzBuzz" target="_blank">
+                <a href="https://github.com/MNicolso/Sum-of-All-Fears" target="_blank">
                     <h2>git</h2>
                 </a>
             </li>
@@ -113,20 +113,19 @@
                 <h1 class="text-uppercase poppins-font"><span>Sum </span>of All Fears</h1>
                 <p class="open-sans-font text-dark h4"> <span class="h4" id="statusBox"></span></p>
                 <p class="open-sans-font text-dark h4"> <span id="printBox"></span></p>
-                <div class="row">
-                    <input type="number" step="1" id="userInput1" value="10" />
-                    <input type="number" step="1" id="userInput2" value="15" />
-                    <input type="number" step="1" id="userInput3" value="3" />
-                    <input type="number" step="1" id="userInput4" value="7" />
+                <div class="row text-center align-content-center">
+                    <h3 class="text-dark">INPUTS:</h3>
+                    <input class="col" type="number" step="1" id="userInput1" value="Input1" />
+                    <input class="col" type="number" step="1" id="userInput2" value="Input1" />
+                    <input class="col" type="number" step="1" id="userInput3" value="Input1" />
+                    <input class="col" type="number" step="1" id="userInput4" value="Input1" />
                 </div>
-                <div class="row pb-2">
-                    <input type="number" step="1" id="k" value="18" />
-                
+                <div class="row p-4 offset-1">
+                    <h3 class="text-dark">SUM:</h3>
+                    <input class="col-2" type="number" step="1" id="k" value="18" />
                 </div>
-                <div class="row text-center">
-                </div>
-                <div class="row text-center offset-1">
-                    <button class="btn btn-danger" id="button">Carbonate Range</button>
+                <div class="row offset-4">
+                    <button class="btn btn-danger" id="button">Launch Sum</button>
                 </div>
 
 
@@ -148,7 +147,13 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                  Instructions will go here.
+                    Welcome! To get started  Sum of All Fears is a web application that takes four numbers and a desired sum value and finds which two of the four numbers will equal the sum. The rules are simple.
+                    <ul>
+                        <li>Place four numbers of your choice in the input fields</li>
+                        <li>Place one number of your choice in the sum field</li>
+                    </ul>
+                    Thats it. Enjoy!
+
                 </div>
 
                 <!-- Modal footer -->
